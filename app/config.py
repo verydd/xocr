@@ -23,7 +23,7 @@ class Config:
 
     def __init__(self):
         self._config = {
-            "token": os.getenv("ZOCR_TOKEN", ""),
+            "token": os.getenv("XOCR_TOKEN", ""),
             "workers": int(os.getenv("ZOCR_WORKERS", "1")),
             "max_file_size": MAX_FILE_SIZE,
             "ocr_model_version": OCR_MODEL_VERSION,
