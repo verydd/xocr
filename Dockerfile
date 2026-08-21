@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 # 设置工作目录
-WORKDIR /opt/zocr
+WORKDIR /opt/xocr
 
 # 安装系统依赖
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -20,7 +20,7 @@ RUN python -m venv myenv && \
     pip install --no-cache-dir -r requirements.txt
 
 # 暴露端口
-EXPOSE 5080
+EXPOSE 6080
 
 # 启动命令
 CMD ["bash", "run.sh"]
