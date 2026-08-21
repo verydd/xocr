@@ -1,10 +1,8 @@
 [English](README.md) | 中文
 
-# ZOCR
+# XOCR
 
 基于百度PP-OCRv6模型的在线OCR识别API服务。
-
-![CleanShot 2026-06-18 at 08.36.40@2x.png](https://img.rss.ink/2026/06/18/PyUM5Mjm.png)
 
 ## 功能特性
 
@@ -126,10 +124,6 @@ curl -X POST http://localhost:5080/api/ocr/upload \
 curl "http://localhost:5080/api/ocr/fetch?url=https://example.com/image.jpg" \
   -H "Authorization: Bearer your_token"
 ```
-
-## 联系我
-
-- X：[@xiaozblog](https://x.com/xiaozblog)
 
 ## 其它产品
 
