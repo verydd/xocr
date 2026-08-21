@@ -32,7 +32,7 @@ if [ -z "$ARG1" ]; then
     runMain
 elif [ "$ARG1" = "dev" ]; then
     echo "Running in development mode..."
-    uvicorn app.main:app --reload --host 0.0.0.0 --port 5080
+    uvicorn app.main:app --reload --host 0.0.0.0 --port 6080
 else
     echo "Unknown argument: $ARG1"
     echo "Usage: $0 [dev]"
