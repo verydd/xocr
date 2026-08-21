@@ -1,6 +1,6 @@
 English | [中文](README_zh.md)
 
-# ZOCR
+# XOCR
 
 Online OCR recognition API service based on Baidu PP-OCRv6 model.
 
@@ -128,5 +128,3 @@ curl "http://localhost:5080/api/ocr/fetch?url=https://example.com/image.jpg" \
 ```
 
 ## Contact
-
-- X: [@xiaozblog](https://x.com/xiaozblog)
