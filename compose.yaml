@@ -1,11 +1,11 @@
 services:
   zocr:
-    image: helloz/zocr
-    container_name: zocr
+    image: verydd/xocr
+    container_name: xocr
     ports:
-      - "5080:5080"
+      - "6080:6080"
     environment:
-      - ZOCR_TOKEN=your_token_here
+      - XOCR_TOKEN=your_token_here
       - ZOCR_WORKERS=1
       - ZOCR_MODEL_VERSION=tiny
     restart: always
