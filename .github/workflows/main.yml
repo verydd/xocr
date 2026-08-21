@@ -1,0 +1,11 @@
+services:
+  xocr:
+    image: verydd/xocr
+    container_name: xocr
+    ports:
+      - "6080:6080"
+    environment:
+      - XOCR_TOKEN=your_token_here
+      - ZOCR_WORKERS=1
+      - ZOCR_MODEL_VERSION=tiny
+    restart: always
