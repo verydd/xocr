@@ -21,10 +21,10 @@ Create a `compose.yaml` file:
 ```yaml
 services:
   zocr:
-    image: helloz/zocr
-    container_name: zocr
+    image: verydd/xocr
+    container_name: xocr
     ports:
-      - "5080:5080"
+      - "6080:6080"
     environment:
       - ZOCR_TOKEN=your_token_here
     restart: always
