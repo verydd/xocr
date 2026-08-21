@@ -1,5 +1,5 @@
 services:
-  zocr:
+  xocr:
     image: verydd/xocr
     container_name: xocr
     ports:
