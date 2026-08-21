@@ -20,7 +20,7 @@ Create a `compose.yaml` file:
 
 ```yaml
 services:
-  zocr:
+  xocr:
     image: verydd/xocr
     container_name: xocr
     ports:
