@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 # 应用启动和关闭事件，上下文管理器
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info(f"ZOCR v{VERSION} starting...")
+    logger.info(f"XOCR v{VERSION} starting...")
     # 预加载OCR模型
     from app.api.ocr import get_ocr_instance
     try:
@@ -28,11 +28,11 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning(f"Failed to preload OCR model: {e}")
     yield
-    logger.info("ZOCR shutting down...")
+    logger.info("XOCR shutting down...")
 
 
 app = FastAPI(
-    title="ZOCR",
+    title="XOCR",
     description="OCR API service based on PP-OCRv6",
     version=VERSION,
     lifespan=lifespan,
