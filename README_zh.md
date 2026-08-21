@@ -21,8 +21,8 @@
 ```yaml
 services:
   zocr:
-    image: helloz/zocr
-    container_name: zocr
+    image: verydd/xocr
+    container_name: xocr
     ports:
       - "5080:5080"
     environment:
