@@ -172,7 +172,7 @@
         let selectedFile = null;
 
         // 从localStorage读取token
-        const savedToken = localStorage.getItem('zocr_token');
+        const savedToken = localStorage.getItem('xocr_token');
         if (savedToken) {
             document.getElementById('token').value = savedToken;
             clearToken.classList.remove('hidden');
@@ -191,7 +191,7 @@
         document.getElementById('token').addEventListener('blur', (e) => {
             const val = e.target.value.trim();
             if (val) {
-                localStorage.setItem('zocr_token', val);
+                localStorage.setItem('xocr_token', val);
             }
         });
 
@@ -199,7 +199,7 @@
         clearToken.addEventListener('click', () => {
             const tokenInput = document.getElementById('token');
             tokenInput.value = '';
-            localStorage.removeItem('zocr_token');
+            localStorage.removeItem('xocr_token');
             clearToken.classList.add('hidden');
             tokenInput.focus();
         });
