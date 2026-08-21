@@ -26,7 +26,7 @@ services:
     ports:
       - "5080:5080"
     environment:
-      - ZOCR_TOKEN=your_token_here
+      - XOCR_TOKEN=your_token_here
     restart: always
 ```
 
