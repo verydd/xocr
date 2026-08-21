@@ -4,8 +4,6 @@ English | [中文](README_zh.md)
 
 Online OCR recognition API service based on Baidu PP-OCRv6 model.
 
-![CleanShot 2026-06-18 at 08.36.40@2x.png](https://img.rss.ink/2026/06/18/PyUM5Mjm.png)
-
 ## Features
 
 - Supports Bearer Token authentication
